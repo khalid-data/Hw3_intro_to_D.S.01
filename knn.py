@@ -90,16 +90,9 @@ class RegressionKNN(KNN):
 
     def predict_point(self, x):
         """ predict label for a given point x and return predicted label """
-        k_nearest_labels = [(self._points[i]) for i in self.neighbours_indices(x)]
+        k_nearest_labels = [(self._labels[i]) for i in self.neighbours_indices(x)]
         predicted = np.mean(np.array(k_nearest_labels))
 
         return predicted
 
-        """if len(self._points) == 0:
-            print('Please train the model first')
-            return []
-        if type(X_test) != list:
-            # In case single point is provided
-            X_test = [X_test]
-        result = [self._labels[i] for i in KNN.neighbours_indices(self, X_test)]
-        return np.mean(result)"""
+

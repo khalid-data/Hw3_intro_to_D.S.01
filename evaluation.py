@@ -35,10 +35,10 @@ def rmse(y_true, y_pred):
 
 def visualize_results(k_list, scores, metric_name, title, path):
     """plot a results graph of cross validation scores"""
-    fig = plt.figure(figsize=(10, 5))
+    fig = plt.figure()
 
     # creating the bar plot
-    plt.plot(scores, k_list, width=0.4)
+    plt.plot(k_list, scores)
 
     plt.xlabel("k")
     plt.ylabel(metric_name)
