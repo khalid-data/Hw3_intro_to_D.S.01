@@ -15,12 +15,12 @@ def load_data(path):
 def adjust_labels(y):
     """ make new one"""
     """adjust labels of season from {0,1,2,3} to {0,1}"""
-    n_y = np.zeros(shape=len(y))
+    n_y = []
     for i in range(len(y)):
         if y[i] == 1 or y[i] == 0:
-            n_y[i] = 0
+            n_y.append(0)
         elif y[i] == 2 or y[i] == 3:
-            n_y[i] = 1
+            n_y.append(1)
     return n_y
 
 
@@ -75,7 +75,7 @@ class StandardScaler():
     def __init__(self):
         """object instantiation"""
         """self.data = np.array size 2, num_of_features first row saves mean second saves stdv"""
-        self.statistics = np.zeros(shape=(2, 5))
+        self.statistics = np.zeros(shape=(2, 4))
 
     def fit(self, X):
         """fit scaler by learning mean and standard deviation per feature """
@@ -93,4 +93,5 @@ class StandardScaler():
 
     def fit_transform(self, X):
         """fit scaler by learning mean and standard deviation per feature, and then transform X """
-        return self.fit(X).transform(X)
+        self.fit(X)
+        return self.transform(X)

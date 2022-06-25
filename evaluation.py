@@ -27,10 +27,10 @@ def f1_score(y_true, y_pred):
 def rmse(y_true, y_pred):
     """returns RMSE of regression task with true labels y_true and predicted labels y_pred"""
     sum = 0
-    for i in range(y_true.size()):
+    for i in range(len(y_true)):
         sum += (y_true[i] - y_pred[i]) ** 2
 
-    return ((1 / y_true.size()) * sum) ** 0.5
+    return ((1 / len(y_true)) * sum) ** 0.5
 
 
 def visualize_results(k_list, scores, metric_name, title, path):

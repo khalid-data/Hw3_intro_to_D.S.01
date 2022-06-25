@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5468387b-2707-4b5a-9c8f-8a2e762d7e91" name="Default Changelist" comment="" />
+    <list default="true" id="5468387b-2707-4b5a-9c8f-8a2e762d7e91" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Hw3_intro_to_D.S/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hw3_intro_to_D.S/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hw3_intro_to_D.S/cross_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Hw3_intro_to_D.S/cross_validation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hw3_intro_to_D.S/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Hw3_intro_to_D.S/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hw3_intro_to_D.S/evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Hw3_intro_to_D.S/evaluation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hw3_intro_to_D.S/knn.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Hw3_intro_to_D.S/knn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hw3_intro_to_D.S/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Hw3_intro_to_D.S/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +24,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Hw3_intro_to_D.S" />
+  </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -26,6 +36,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="2Apu6GtMqAJMjlz5V7qoc5rKqak" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -71,6 +82,7 @@
       <workItem from="1655718676048" duration="25894000" />
       <workItem from="1655898180680" duration="28769000" />
       <workItem from="1655932971462" duration="5120000" />
+      <workItem from="1656107090759" duration="8742000" />
     </task>
     <servers />
   </component>
@@ -81,14 +93,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../Hw3_intro_to_D.S/knn.py</url>
-          <line>80</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/../Hw3_intro_to_D.S/cross_validation.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../Hw3_intro_to_D.S/cross_validation.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/../Hw3_intro_to_D.S/knn.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -100,6 +112,6 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Hw3_intro_to_D_S_$main.coverage" NAME="main Coverage Results" MODIFIED="1656034051501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Hw3_intro_to_D.S" />
+    <SUITE FILE_PATH="coverage/Hw3_intro_to_D_S_$main.coverage" NAME="main Coverage Results" MODIFIED="1656119292141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Hw3_intro_to_D.S" />
   </component>
 </project>

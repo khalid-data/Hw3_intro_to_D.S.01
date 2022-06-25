@@ -4,7 +4,7 @@ from abc import abstractmethod
 from data import StandardScaler
 
 
-class KNN():
+class KNN:
     def __init__(self, k):
         """object instantiation, save k and define a scaler object"""
         self._points = []
@@ -27,7 +27,7 @@ class KNN():
     def neighbours_indices(self, x):
         """for a given point x, find indices of k closest points in the training set"""
 
-        # dict where in each index key we get the dist between x and the point from train (that has the same index)
+        """# dict where in each index key we get the dist between x and the point from train (that has the same index)
         index_to_distance = {point_index: self.dist(p, x) for point_index, p in enumerate(self._points)}
 
         # sort and get closest k
@@ -36,38 +36,18 @@ class KNN():
         # count the frequency of each label in the closest k points
         closest_indices = [sorted_indices[i] for i in sorted_indices[:self._k]]
 
-        """
-        ## return label of the most frequent points label in closest k points
-        counts = self.Counter(closest_targets)
-        m_common = self.most_common(counts)
-        return m_common"""
+       
 
-        return closest_indices
+        return closest_indices"""
+        distances = [self.dist(x, point) for point in self._points]
+
+        return np.argsort(distances)[:self._k]
 
     @staticmethod
     def dist(x1, x2):
         """returns Euclidean distance between x1 and x2"""
         return np.linalg.norm(x1 - x2)
 
-
-"""    def Counter(list):
-        dict = {}
-        for element in list:
-            if element in dict.keys():
-                dict[element] += 1
-            else:
-                dict[element] = 1
-
-        return dict
-
-
-    def most_common(dict):
-        max_key = dict.keys()[0]
-        for key in dict.keys():
-            if dict[key] > dict[max_key]:
-                max_key = key
-
-        return max_key"""
 
 
 class ClassificationKNN(KNN):
@@ -77,6 +57,7 @@ class ClassificationKNN(KNN):
 
     def predict(self, X_test):
         """predict labels for X_test and return predicted labels """
+        X_test = self.get_scaler().transform(X_test)
         closest_neighbors = np.zeros(shape=(X_test.shape[0], self._k))
         for i in range(X_test.shape[0]):
             closest_neighbors[i] = np.array(KNN.neighbours_indices(self, X_test[i]))
@@ -96,20 +77,29 @@ class ClassificationKNN(KNN):
         return temp[0][0]
 
 
-
 class RegressionKNN(KNN):
     def __init__(self, k):
         """object instantiation, parent class instantiation """
-        KNN.__init__(KNN(), k)
+        super().__init__(k)
 
     def predict(self, X_test):
         """predict labels for X_test and return predicted labels """
+        X_test = self.get_scaler().transform(X_test)
+        predicted_labels = [self.predict_point(x_test) for x_test in X_test]
+        return predicted_labels
 
-        if len(self._points) == 0:
+    def predict_point(self, x):
+        """ predict label for a given point x and return predicted label """
+        k_nearest_labels = [(self._points[i]) for i in self.neighbours_indices(x)]
+        predicted = np.mean(np.array(k_nearest_labels))
+
+        return predicted
+
+        """if len(self._points) == 0:
             print('Please train the model first')
             return []
         if type(X_test) != list:
             # In case single point is provided
             X_test = [X_test]
         result = [self._labels[i] for i in KNN.neighbours_indices(self, X_test)]
-        return np.mean(result)
+        return np.mean(result)"""
