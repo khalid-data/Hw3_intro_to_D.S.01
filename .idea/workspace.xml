@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5468387b-2707-4b5a-9c8f-8a2e762d7e91" name="Default Changelist" comment="classification is working">
-      <change beforePath="$PROJECT_DIR$/../Hw3_intro_to_D.S/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hw3_intro_to_D.S/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hw3_intro_to_D.S/evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Hw3_intro_to_D.S/evaluation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hw3_intro_to_D.S/knn.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Hw3_intro_to_D.S/knn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Hw3_intro_to_D.S/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Hw3_intro_to_D.S/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="5468387b-2707-4b5a-9c8f-8a2e762d7e91" name="Default Changelist" comment="works like a charm!&#10;need one more check to delete comments and unwanted stuff" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +76,7 @@
       <workItem from="1655898180680" duration="28769000" />
       <workItem from="1655932971462" duration="5120000" />
       <workItem from="1656107090759" duration="10301000" />
-      <workItem from="1656121581357" duration="2770000" />
+      <workItem from="1656121581357" duration="3438000" />
     </task>
     <task id="LOCAL-00001" summary="classification is working">
       <created>1656119354873</created>
@@ -90,15 +85,34 @@
       <option name="project" value="LOCAL" />
       <updated>1656119354873</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="works like a charm!&#10;need one more check to delete comments and unwanted stuff">
+      <created>1656124730113</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656124730113</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="classification is working" />
-    <option name="LAST_COMMIT_MESSAGE" value="classification is working" />
+    <MESSAGE value="works like a charm!&#10;need one more check to delete comments and unwanted stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="works like a charm!&#10;need one more check to delete comments and unwanted stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -118,6 +132,6 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Hw3_intro_to_D_S_$main.coverage" NAME="main Coverage Results" MODIFIED="1656123883818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Hw3_intro_to_D.S" />
+    <SUITE FILE_PATH="coverage/Hw3_intro_to_D_S_$main.coverage" NAME="main Coverage Results" MODIFIED="1656124655060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Hw3_intro_to_D.S" />
   </component>
 </project>
